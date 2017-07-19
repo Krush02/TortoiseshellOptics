@@ -1,15 +1,19 @@
-@media only screen and (max-width: 480px) {
-  .menu-mobile {
-    display: block;
-  }
-}
-
 .menu-mobile {
   display: none;
 }
 
+html {
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+}
+
 body {
   font-family: helvetica;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .box {
@@ -35,6 +39,190 @@ nav {
   padding: 1rem 0;
 }
 
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  padding-right: 2rem;
+}
+
 ul li {
   display: inline;
+  padding: 0 1rem;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-banner {
+  display: inline-block;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-bottom: 5rem;
+}
+
+.info h2 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  padding: .5rem 1.25rem;
+}
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+
+/* ------------ Breakpoints ---------- */
+@media only screen and (max-width: 600px) {
+
+  .box {
+    width: 100%;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .main-banner {
+    margin-top: 9rem auto 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .service {
+    height: auto;
+    margin: .75rem;
+    font-size: .75rem;
+  }
+
+  .company-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+
+  .info {
+    width: auto;
+  }
+
+  .info h2 {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: .75rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    padding-top: 0px;
+    height: 22rem;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .box {
+    max-width: 100%;
+  }
 }
